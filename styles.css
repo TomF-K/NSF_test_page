@@ -7,6 +7,15 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: var(--sans);
+}
+
+body [class*="button"]:hover {
+  background-color: var(--transblack);
+  cursor: pointer;
+}
+
 /* colour palette */
 
 :root {
@@ -16,6 +25,12 @@ html {
   --orange: #f5a503;
   --aqua: #4ad9d9;
   --teal: #36b1bf;
+  --yellow: #ffe11a;
+  --limegreen: #bedb39;
+  --hotpink: #ff3b77;
+  --transblack: #86848490;
+  --sans: "DM Sans", sans-serif;
+  --cursive: Inspiration, cursive;
 }
 
 /* header & nav styling */
@@ -29,6 +44,12 @@ header {
   justify-content: space-between;
   border-bottom: 2px solid var(--mint);
   position: sticky;
+}
+
+header h2 {
+  font-family: var(--cursive);
+  font-size: 3rem;
+  width: 250px;
 }
 
 /* signup section */
@@ -64,9 +85,41 @@ input {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
+  grid-gap: 10px;
   margin: 2rem;
+}
+
+.location-button {
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  border: 2px solid var(--whiteish);
+  color: var(--whiteish);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.button-0 {
+  background-color: var(--aqua);
+}
+.button-1 {
+  background-color: var(--orange);
+}
+.button-2 {
+  background-color: var(--salsa);
+}
+.button-3 {
+  background-color: var(--teal);
+}
+.button-4 {
+  background-color: var(--limegreen);
+}
+.button-5 {
+  background-color: var(--yellow);
+}
+
+.location-button:hover {
+  background-color: var(--transblack);
+  cursor: pointer;
 }
 
 /* blog posts */
