@@ -9,6 +9,8 @@ html {
 
 body {
   font-family: var(--sans);
+  margin: 0;
+  padding: 0;
 }
 
 body [class*="button"]:hover {
@@ -37,7 +39,7 @@ body [class*="button"]:hover {
 
 header {
   margin: 0px;
-  padding-bottom: 1rem;
+  padding: 1rem;
   background-color: var(--whiteish);
   display: flex;
   align-items: center;
@@ -46,10 +48,15 @@ header {
   position: sticky;
 }
 
-header h2 {
+header h1 {
   font-family: var(--cursive);
   font-size: 3rem;
   width: 250px;
+  margin-left: 3rem;
+}
+
+nav a {
+  padding: 10px;
 }
 
 /* signup section */
@@ -122,6 +129,42 @@ input {
   cursor: pointer;
 }
 
-/* blog posts */
+/* featured activities */
+
+.featured-activities {
+  background-color: var(--teal);
+  padding: 4rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.featured-activities {
+  color: var(--whiteish);
+}
+
+.featured-activities h2 {
+  font-size: 3rem;
+}
+
+.featured-activities__blog-post {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 70%;
+}
+
+.blog-post__text {
+  padding: 1rem;
+  font-size: 120%;
+}
+
+.blog-post__img {
+  padding: 20px;
+}
+
+.blog-post__img img {
+  max-width: 500px;
+}
 
 /* footer */
