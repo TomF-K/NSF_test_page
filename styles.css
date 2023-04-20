@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* colour palette */
+
+:root {
+  --mint: #e9f1df;
+  --salsa: #f2385a;
+  --orange: #f5a503;
+  --aqua: #4ad9d9;
+  --teal: #36b1bf;
+}
+
+/* header & nav styling */
+
+header {
+  margin: 0px;
+  padding-bottom: 1rem;
+  background-color: var(--mint);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  position: sticky;
+}
+
+/* signup section */
+
+.email-signup {
+  padding: 2rem;
+  margin: 0;
+  background-color: var(--mint);
+  text-align: center;
+}
+
+.email-signup__button {
+  display: block;
+  margin: 0px auto;
+}
+
+/* location grid */
+
+/* blog posts */
+
+/* footer */
