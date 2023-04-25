@@ -48,8 +48,6 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid var(--mint);
-  position: sticky;
-  top: 0;
   padding: 0.5rem 1rem;
 }
 
@@ -216,6 +214,15 @@ footer [class*="fa-"] {
   margin: 0px auto;
 }
 
+/* sticky header on desktop */
+
+@media (min-width: 851px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
+
 /* mobile styling */
 
 @media (max-width: 850px) {
@@ -223,6 +230,11 @@ footer [class*="fa-"] {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
   }
 
   .grid-container {
