@@ -22,6 +22,11 @@ body h2 {
   font-size: 2rem;
 }
 
+.page-title {
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
 /* colour palette */
 
 :root {
@@ -242,5 +247,12 @@ footer [class*="fa-"] {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     margin: 2rem;
+  }
+
+  .featured-activities__blog-post {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
   }
 }
