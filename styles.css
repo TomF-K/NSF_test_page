@@ -248,6 +248,10 @@ footer [class*="fa-"] {
     margin: 2rem;
   }
 
+  .featured-activities__title {
+    text-align: center;
+  }
+
   .featured-activities__blog-post {
     display: flex;
     flex-flow: row wrap;
