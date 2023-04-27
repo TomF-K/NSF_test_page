@@ -241,6 +241,11 @@ footer [class*="fa-"] {
     text-align: center;
   }
 
+  .page-title {
+    padding: 0.5rem;
+    line-height: 150%;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
