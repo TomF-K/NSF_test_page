@@ -1,6 +1,6 @@
 // TODO add a mouseover event listener
-let eghamButton = document.getElementsByTagName("span")[0];
+let eghamButton = document.getElementsByClassName("button-0")[0];
 
-eghamButton.addEventListener("mouseover", () => {
-  eghamButton.textContent = eghamButton.textContent.toUpperCase();
+eghamButton.addEventListener("click", (event) => {
+  eghamButton.textContent = "EGGS and HAM";
 });
