@@ -26,6 +26,12 @@ body h2 {
   text-align: center;
 }
 
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
 /* colour palette */
 
 :root {
@@ -171,6 +177,7 @@ input {
 
 .featured-activities h2 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .featured-activities__blog-post {
@@ -264,10 +271,6 @@ footer [class*="fa-"] {
     margin: 2rem;
   }
 
-  .featured-activities__title {
-    text-align: center;
-  }
-
   .featured-activities__blog-post {
     display: flex;
     flex-flow: row wrap;
@@ -300,9 +303,5 @@ footer [class*="fa-"] {
   }
   nav a:nth-child(2) {
     background-color: var(--yellow);
-  }
-
-  .featured-activities h2 {
-    text-align: center;
   }
 }
