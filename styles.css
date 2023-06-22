@@ -176,6 +176,13 @@ input {
   width: 70%;
 }
 
+.blog-post__text a {
+  text-decoration: none;
+}
+.blog-post__text a:hover {
+  color: var(--whiteish);
+}
+
 .blog-post__text {
   padding: 1rem;
   font-size: 120%;
