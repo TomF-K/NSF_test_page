@@ -234,18 +234,18 @@ footer [class*="fa-"] {
   }
 }
 
-/* mobile styling */
+/* tablet styling */
 
 @media (max-width: 850px) {
   header {
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   nav a {
     display: block;
-    text-align: center;
+    text-align: flex-start;
   }
 
   .page-title {
@@ -269,5 +269,15 @@ footer [class*="fa-"] {
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  header {
+    justify-content: center;
+  }
+
+  nav a {
+    text-align: center;
   }
 }
