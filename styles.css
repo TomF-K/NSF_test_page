@@ -304,4 +304,8 @@ footer [class*="fa-"] {
   nav a:nth-child(2) {
     background-color: var(--yellow);
   }
+
+  .blog-post__img img {
+    max-width: 400px;
+  }
 }
