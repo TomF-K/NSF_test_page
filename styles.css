@@ -244,21 +244,31 @@ footer [class*="fa-"] {
 
 /* Grid page styling */
 
-.grid-wrapper {
+.grid_wrapper {
+  width: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4%;
+  margin-left: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
 }
 
 figure {
   border: 2px solid black;
   margin: 0;
   padding: 0;
-  max-width: 20vw;
 }
 
 figure img {
   width: 100%;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span3 {
+  grid-column: span 3;
 }
 
 /* Media Queries */
