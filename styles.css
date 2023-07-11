@@ -265,7 +265,15 @@ figure {
 
 figcaption {
   background-color: var(--orange);
+}
+
+figcaption a {
+  text-decoration: none;
   color: var(--whiteish);
+}
+
+figcaption a:hover {
+  color: var(--transblack);
 }
 
 figcaption h3 {
