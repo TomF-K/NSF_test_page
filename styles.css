@@ -45,6 +45,7 @@ h3 {
   --limegreen: #bedb39;
   --hotpink: #ff3b77;
   --transblack: #86848490;
+  --logo_orange: #e26643;
   --sans: "DM Sans", sans-serif;
   --cursive: Inspiration, cursive;
 }
@@ -261,18 +262,26 @@ main h2 {
 figure {
   border: 3px solid black;
   border-radius: 5px;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(3, auto);
 }
 
 figcaption {
-  background-color: var(--orange);
+  background-color: var(--logo_orange);
+  margin: 0;
+  padding: 0;
 }
 
+/* TODO fix figcaption background height */
+
 figcaption a {
+  display: block;
+  margin-left: 1rem;
+  padding: 0;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--whiteish);
 }
@@ -286,6 +295,8 @@ figcaption h3 {
 }
 
 figure img {
+  grid-column: 1/2;
+  grid-row: 1/3;
   width: 100%;
   height: 100%;
 }
