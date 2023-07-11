@@ -244,10 +244,15 @@ footer [class*="fa-"] {
 
 /* Grid page styling */
 
+main h2 {
+  text-align: center;
+}
+
 .grid_wrapper {
   width: 70%;
   display: grid;
-  margin-left: 0 auto;
+  margin: 0 auto;
+  padding: 2rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 10px;
