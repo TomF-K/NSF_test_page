@@ -60,6 +60,7 @@ header {
   justify-content: space-between;
   border-bottom: 2px solid var(--mint);
   padding: 0.5rem 1rem;
+  z-index: 999;
 }
 
 header img {
