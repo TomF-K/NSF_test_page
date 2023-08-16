@@ -322,6 +322,13 @@ figure img {
   grid-column: span 3;
 }
 
+/* GRID AREA PAGE STYLING */
+
+.grid-area-img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Media Queries */
 
 /* tablet styling */
