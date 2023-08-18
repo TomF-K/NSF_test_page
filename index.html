@@ -17,13 +17,20 @@
   </head>
   <body>
     <header>
-      <img src="images/NSM_logo.png" alt="North Surrey Families"><a href="index.html"></a></img>
+      <!-- nav -->
       <nav>
-        <a href="/baby_classes.html">Baby & Toddler Classes</a>
-        <a href="/play_cafes.html">Play Cafés</a>
-        <a href="">Swimming and Sports Clubs</a>
+        <a href="index.html"
+          ><img src="images/NSM_logo.png" alt="North Surrey Families"
+        /></a>
+        <button class="nav-toggle"><span class="fas fa-bars"></span></button>
+        <ul class="nav-links">
+          <li><a href="/baby_classes.html">Baby & Toddler Classes</a></li>
+          <li><a href="/play_cafes.html">Play Cafés</a></li>
+          <li><a href="">Swimming and Sports Clubs</a></li>
+        </ul>
       </nav>
     </header>
+    <!-- email signup -->
     <section class="email-signup">
       <h2 class="email-signup__header">
         Get all the latest baby and toddler activities direct to your inbox!
@@ -35,6 +42,7 @@
       />
       <button class="email-signup__button" type="submit">Sign up</button>
     </section>
+    <!-- location buttons -->
     <section class="activities-locations">
       <h2>Baby and toddler activities by location:</h2>
       <div class="grid-container">
@@ -50,6 +58,7 @@
         </button>
       </div>
     </section>
+    <!-- featured activities -->
     <section class="featured-activities">
       <h2>This week's featured activities</h2>
       <article class="featured-activities__blog-post">
@@ -103,11 +112,14 @@
         </div>
         <div class="blog-post__img">
           <a href=""
-            ><img src="images/family_beach_landscape.jpg" alt="family at the beach"
+            ><img
+              src="images/family_beach_landscape.jpg"
+              alt="family at the beach"
           /></a>
         </div>
       </article>
     </section>
+    <!-- footer -->
     <footer>
       <h2>Get in touch</h2>
       <div class="icon-container">
@@ -139,6 +151,7 @@
         </ul>
       </div>
     </footer>
+    <!-- javascript -->
     <script src="/app.js"></script>
   </body>
 </html>

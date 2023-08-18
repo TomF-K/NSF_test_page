@@ -61,7 +61,7 @@ h3 {
   }
 }
 
-/* header & nav styling */
+/* nav styling */
 
 header {
   background-color: var(--whiteish);
@@ -84,7 +84,15 @@ h1 a {
   color: black;
 }
 
-nav a {
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+.nav-links a {
   padding: 10px;
   text-decoration: none;
   color: black;
