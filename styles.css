@@ -300,21 +300,11 @@ footer [class*="fa-"] {
 
   nav a {
     text-align: center;
-    border-radius: 20px;
     margin-bottom: 0.5rem;
-    color: var(--whiteish);
-    background-color: var(--orange);
   }
 
   nav a:hover {
-    color: var(--whiteish);
-  }
-
-  nav a:first-child {
-    background-color: var(--hotpink);
-  }
-  nav a:nth-child(2) {
-    background-color: var(--yellow);
+    color: var(--transblack);
   }
 
   .blog-post__img img {
