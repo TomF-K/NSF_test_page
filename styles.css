@@ -43,7 +43,7 @@ h3 {
   --teal: #36b1bf;
   --yellow: #ffe11a;
   --limegreen: #bedb39;
-  --hotpink: #ff3b77;
+  --black: #000000;
   --transblack: #86848490;
   --logo_orange: #e26643;
   --sans: "DM Sans", sans-serif;
@@ -51,15 +51,6 @@ h3 {
   color-scheme: light dark;
 }
 
-/* dark mode styling */
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: light dark;
-    --canvas: black;
-    --canvastext: white;
-  }
-}
 
 /* nav styling */
 
@@ -107,7 +98,7 @@ nav a:hover {
 
 .email-signup {
   padding: 2rem;
-  background-color: var(--mint);
+  background-color: var(--logo_orange);
   text-align: center;
 }
 
@@ -117,7 +108,9 @@ input {
   font-family: var(--sans);
   font-size: 1rem;
   padding: 10px;
-  border: 1px solid var(--mint);
+  background-color: var(--logo_orange);
+  opacity: 0.7;
+  border: 2px solid var(--whiteish);
   border-radius: 10px;
 }
 
@@ -127,9 +120,13 @@ input {
   font-size: 1rem;
   margin: 0px auto;
   padding: 0.5rem 2rem;
-  background-color: var(--mint);
+  background-color: var(--logo_orange);
   border: 2px solid var(--whiteish);
   border-radius: 20px;
+}
+
+.email-signup__button:hover {
+  scale: 1.1;
 }
 
 /* activities-locations */
@@ -137,6 +134,8 @@ input {
 .activities-locations {
   text-align: center;
   padding: 2rem 4rem;
+  color: var(--black);
+  background-color: var(--mint);
 }
 
 .grid-container {
@@ -150,28 +149,10 @@ input {
   padding: 1rem 3rem;
   border-radius: 20px;
   border: 2px solid var(--whiteish);
-  color: var(--whiteish);
+  color: var(--black);
+  background-color: var(--whiteish);
   font-size: 1.5rem;
   font-weight: bolder;
-}
-
-.button-0 {
-  background-color: var(--aqua);
-}
-.button-1 {
-  background-color: var(--orange);
-}
-.button-2 {
-  background-color: var(--salsa);
-}
-.button-3 {
-  background-color: var(--teal);
-}
-.button-4 {
-  background-color: var(--limegreen);
-}
-.button-5 {
-  background-color: var(--yellow);
 }
 
 .location-button:hover {
