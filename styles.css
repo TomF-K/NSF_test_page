@@ -80,6 +80,7 @@ ul {
 }
 li {
   list-style-type: none;
+  display: inline-block;
 }
 
 .nav-links a {
@@ -279,16 +280,22 @@ footer [class*="fa-"] {
   }
 }
 
-/* mobile styling */
-
-@media (max-width: 620px) {
+@media (max-width: 800px) {
   header {
     justify-content: center;
   }
+}
 
+/* mobile styling */
+
+@media (max-width: 650px) {
   nav a {
     text-align: center;
     margin-bottom: 0.5rem;
+  }
+
+  li {
+    display: block;
   }
 
   nav a:hover {
